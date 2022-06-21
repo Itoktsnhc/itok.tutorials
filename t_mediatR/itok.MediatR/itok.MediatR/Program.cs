@@ -3,10 +3,18 @@
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 using static itok.MediatR._00;
+using static itok.MediatR._01;
 
 var sc = new ServiceCollection();
 
 sc.AddMediatR(typeof(Program));
+
+#region Pipeline
+sc.AddScoped(
+                typeof(IPipelineBehavior<,>),
+                typeof(LoggingBehavior<,>));
+
+#endregion
 
 var sp = sc.BuildServiceProvider();
 var mediator = sp.GetRequiredService<IMediator>();
@@ -49,4 +57,5 @@ var broadcast = new BroadcastReq { Payload = "event 1" };
 await mediator.Publish(broadcast);
 
 #endregion
+
 
