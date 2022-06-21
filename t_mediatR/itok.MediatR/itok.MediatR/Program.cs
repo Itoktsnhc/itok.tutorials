@@ -41,3 +41,12 @@ var notifyReq = new NotifyReq { Payload = "event 1" };
 await mediator.Publish(notifyReq);
 
 #endregion
+
+#region Notifications_Broadcast
+
+var broadcast = new BroadcastReq { Payload = "event 1" };
+
+await mediator.Publish(broadcast);
+
+#endregion
+

@@ -24,6 +24,11 @@ namespace itok.MediatR
             public string Payload { get; set; }
         }
 
+        public class BroadcastReq : INotification
+        {
+            public string Payload { get; set; }
+        }
+
         public class RespBasic
         {
             public string RespPayload { get; set; }
@@ -60,6 +65,41 @@ namespace itok.MediatR
             public Task Handle(NotifyReq notification, CancellationToken cancellationToken)
             {
                 Console.WriteLine($"Notification: {notification.Payload}");
+                return Task.CompletedTask;
+            }
+        }
+
+        public class BroadcastHandler1 : INotificationHandler<BroadcastReq>
+        {
+            public Task Handle(BroadcastReq notification, CancellationToken cancellationToken)
+            {
+                Console.WriteLine($"{nameof(BroadcastHandler1)}: {notification.Payload}");
+                return Task.CompletedTask;
+            }
+        }
+
+        public class BroadcastHandler2 : INotificationHandler<BroadcastReq>
+        {
+            public Task Handle(BroadcastReq notification, CancellationToken cancellationToken)
+            {
+                Console.WriteLine($"{nameof(BroadcastHandler2)}: {notification.Payload}");
+                return Task.CompletedTask;
+            }
+        }
+        public class BroadcastHandler3 : INotificationHandler<BroadcastReq>
+        {
+            public Task Handle(BroadcastReq notification, CancellationToken cancellationToken)
+            {
+                Console.WriteLine($"{nameof(BroadcastHandler3)}: {notification.Payload}");
+                return Task.CompletedTask;
+            }
+        }
+
+        public class BroadcastHandler4 : INotificationHandler<BroadcastReq>
+        {
+            public Task Handle(BroadcastReq notification, CancellationToken cancellationToken)
+            {
+                Console.WriteLine($"{nameof(BroadcastHandler4)}: {notification.Payload}");
                 return Task.CompletedTask;
             }
         }
