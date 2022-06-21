@@ -10,9 +10,8 @@ var sc = new ServiceCollection();
 sc.AddMediatR(typeof(Program));
 
 #region Pipeline
-sc.AddScoped(
-                typeof(IPipelineBehavior<,>),
-                typeof(LoggingBehavior<,>));
+sc.AddScoped(typeof(IPipelineBehavior<,>), typeof(LoggingBehavior<,>));
+sc.AddScoped(typeof(IStreamPipelineBehavior<,>), typeof(StreamLoggingBehavior<,>));
 
 #endregion
 
