@@ -7,13 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08bfaa1f-5507-4fec-b141-f9288a70c3fa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Itok.Orleans.HelloWorld/Grains.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.itok.orleans/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.itok.orleans/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Itok.Orleans.Basic/Entities.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Itok.Orleans.Basic/Itok.Orleans.Basic.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Itok.Orleans.Basic/Program.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Itok.Orleans.Basic/Properties/launchSettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Itok.Orleans.Samples.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Itok.Orleans.Samples.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +89,7 @@
       <option name="presentableId" value="Default" />
       <updated>1656580573330</updated>
       <workItem from="1656580576923" duration="198000" />
-      <workItem from="1656581730657" duration="1625000" />
+      <workItem from="1656581730657" duration="2939000" />
     </task>
     <servers />
   </component>
